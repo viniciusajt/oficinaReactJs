@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function addElement(){
+                var inputName = document.querySelector("#inputName")
+                var inputSurname = document.querySelector("#inputSurname")
+                var inputAge = document.querySelector("#inputAge")
+                var tbody = document.querySelector("tbody")
+                tbody.innerHTML += `
+                <tr>
+                    <td>${inputName.value}</td>
+                    <td>${inputSurname.value}</td>
+                    <td>${inputAge.value}</td>
+                </tr>]
+                ` 
+            }
+        </script>
+        <input id="inputName" type="text" placeholder="Nome:">
+        <input id="inputSurname" type="text" placeholder="Sobrenome:">
+        <input id="inputAge" type="text" placeholder="Idade:">
+        <button onclick="addElement()">
+            Adicionar
+        </button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vinícius</td>
+                    <td>Justino</td>
+                    <td>19 anos</td>
+                </tr>
+                <tr>
+                    <td>Eduardo</td>
+                    <td>Dutra</td>
+                    <td>20 anos</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>Yazawa</td>
+                    <td>21 anos</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
