@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            let count=0;
+            function clickCount(){
+                let label = document.querySelector("label")
+                label.innerText=`Contador: ${count}`
+                count++;
+            }
+        </script>
+        <button onclick="clickCount()">
+            Click me!
+        </button><br>
+        <label>
+            Contador: 0
+        </label>
+    </body>
+</html>
